@@ -3,11 +3,6 @@ FROM alpine:latest
 # Install the packages we need. Avahi will be included
 RUN echo "http://nl.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories &&\
 	apk add --update cups \
-	cups-libs \
-	cups-pdf \
-	cups-client \
-	cups-filters \
-	cups-dev \
 	ghostscript \
 	avahi \
 	inotify-tools \
